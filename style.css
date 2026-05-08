@@ -1,0 +1,761 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+header,
+.welcome,
+.about,
+table,
+.our-barbers,
+.contact-here,
+footer{
+    scroll-margin-top: 10px;
+}
+
+.main{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i{
+    color:  #C9A24D;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size: 1.3rem;
+}
+/* ================= NAV ================= */
+
+nav{
+    /* background-color: #0B1C2D; */
+   
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9%;
+    padding: 5px;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-style: italic;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .toggle{
+    display: none;
+}
+
+nav .toggle button{
+    display: none;
+}
+
+nav h1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+}
+
+nav div{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 3px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background: url(./images/gpt\ barbershop\ image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+    font-family: 'Playfair Display', serif;
+    scroll-margin-top: 95px;
+    height: max-content;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#hero-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+}
+
+header h2{
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    color: #C9A24D;
+}
+
+header h3{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header button{
+    margin-top: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #C9A24D;
+    font-family: 'Montserrat', sans-serif;
+    color: #0B1C2D;
+}
+
+header button:hover{
+    background-color: #C9A24D;
+    transform: scale(1.05);
+}
+
+header i{
+    color: #0B1C2D;
+}
+
+/* ================= WELCOME ================= */
+
+.welcome{
+    background-color: #F4F4F4;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.welcome h2{
+    font-size: 28px;
+    color: #0B1C2D;
+    margin-bottom: 10px;
+}
+
+.welcome p{
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about{
+    background-color: #F2F2F2;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    scroll-margin-top: 95px;
+}
+
+.about h4{
+    color: #0B1C2D;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.about p{
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.about article{
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ================= TABLE ================= */
+
+table{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border-collapse: collapse;
+    font-size: 1.3em;
+    background-color: #F4F4F4;
+    scroll-margin-top: 100px;
+    
+}
+
+table th,
+table td{
+    border: 0.5px solid #DDDDDD;
+    padding: 5px;
+}
+
+table th{
+    background-color:  #0B1C2D;
+     color: white ;
+   
+}
+
+table td{
+    color: #0B1C2D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+
+/* ================= BARBERS ================= */
+
+.our-barbers{
+    height: max-content;
+    width: 99%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    background-color: #F4F4F4;
+    margin-top: 30px;
+}
+
+
+.barber-cont{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+    justify-items: center;
+  
+    scroll-margin-top: 95px;
+}
+
+.our-barbers article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    grid-area: head;
+    margin-top: 3.5%;
+}
+
+.our-barbers .barber-template{
+    border: 2px solid #CCD6DD;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    gap: 4px;
+}
+
+.our-barbers img{
+    height: 50%;
+    width: 60%;
+    border: 2px solid greenyellow;
+}
+
+.our-barbers h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.our-barbers h6{
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.our-barbers p{
+    font-size: 12px;
+}
+
+/* ================= GALLERY ================= */
+
+#gallery{
+    background-color: #F4F4F4;
+    margin-top: 30px;
+    scroll-margin-top: 95px;
+}
+
+#gallery .pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+   
+}
+
+
+
+.pictures img:hover{
+    transform: scale(1.05);
+}
+
+/*================== Contact Form =========== */
+.contact-here{
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #102A43;
+    margin-top: 30px;
+}
+
+#bookingForm{
+    background-color:  #102A43;
+    border: none;
+    box-shadow: 0px 0px 5px;
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 7px;
+    border-radius: 6px;
+}
+
+#bookingForm input,textarea,select{
+    height: 25px;
+     width: 70%;
+     font-size: 0.7rem;
+     padding: 3px 4px;
+     border-radius: 6px;
+     border: 1px solid;
+     outline: 0px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+#bookingForm textarea{
+    height: 60px;
+
+}
+
+#bookingForm button{
+    padding: 12px;
+    background:  #C9A24D ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.2s ease;
+    margin-top: 10px;
+}
+
+#bookingForm button i{
+    color: #102A43;
+}
+
+#bookingForm button:hover{
+    transform: scale(1.03);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    height: 150px;
+    margin-top: 55px;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-info{
+    flex: 1;
+    min-width: 280px;
+}
+
+.footer-info section{
+    margin-bottom: 20px;
+}
+
+
+footer h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    #hamburger button{
+        border: none;
+        background: transparent;
+        color: #102A43;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    body{
+        background: transparent;
+    }
+
+
+    header{
+        background-size: cover;
+        height: 440px;
+    }
+
+    #hero-sec{
+        margin-top: 90px;
+    }
+
+    nav{
+        backdrop-filter: blur(3px);
+    }
+
+
+
+    #hamburger button:active{
+        color: #C9A24D;
+        transform: rotateX(180deg);
+    }
+
+    .our-barbers,
+    .contact-here{
+        scroll-margin-top: 97px;
+    }
+    
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    
+
+    #hamburger{
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    nav h1{
+        margin-left: -40px;
+    }
+
+    #nav-links{
+        display: none;
+    }
+
+    nav #nav-links.open{
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        position: absolute;
+        font-size: 1.05rem;
+        top: 100px;
+        right: 0;
+        left: auto;
+        background: white;
+        padding-left: 5px;
+        padding-top: 4px;
+        padding-bottom: 3px;
+        border: 1px solid #C9A24D;
+        box-shadow: 0px 0px 5px black;
+        
+    }
+
+    .open a{
+        color: #102A43;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .open a:hover{
+        background: #102A43;
+        color: white;
+        width: 90%;
+        height: 100%;
+        text-align: left;
+        border-radius: 6px;
+        transform: scale(1.1);
+    }
+
+    .open nav a:active{
+         background: #102A43;
+        color: white;
+        width: 98%;
+        height: 100%;
+        text-align: left;
+        border-radius: 6px;
+        transform: scale(0.98);
+    }
+
+    .open nav i{
+        font-size: 0.9rem;
+    }
+
+    .pictures{
+        row-gap: 10px;
+    }
+
+    #gallery .pictures img{
+    height: 100%;
+    width: 95%;
+}
+
+
+    footer p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1025px){
+    #nav-links i{
+        display: none;
+    }
+
+     header{
+        height: 340px;
+    }
+
+    #hamburger button{
+        display: none;
+    }
+
+    #nav-links{
+        font-size: 1.03rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #nav-links a:hover{
+        transform: scale(1.1);
+        color: #C9A24D;
+    }
+
+    #nav-links a:active{
+        color: #C9A24D;
+        transform: scale(0.98);
+    }
+
+    .our-barbers{
+        scroll-margin-top: 100px;
+    }
+
+    .contact-here{
+        scroll-margin-top: 100px;
+    }
+
+    #gallery{
+        scroll-margin-top: 100px;
+    }
+
+    .pictures{
+        margin-top: 10px;
+    }
+
+    .pictures div{
+        height: 300px;
+    }
+
+    #gallery .pictures img{
+    height: 96%;
+    width: 95%;
+}
+
+    .barber-template{
+        height: 255px;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1440px) {
+     #nav-links i{
+        display: none;
+    }
+
+    header{
+        height: 360px;
+    }
+
+
+    nav{
+        width: 100%;
+    }
+
+    #hamburger button{
+        display: none;
+    }
+
+    #nav-links{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+  .our-barbers{
+        scroll-margin-top: 100px;
+    }
+
+    .contact-here{
+        scroll-margin-top: 100px;
+    }
+
+    #gallery{
+        scroll-margin-top: 100px;
+    }
+
+    .pictures{
+        margin-top: 10px;
+    }
+
+    .pictures div{
+        height: 350px;
+    }
+
+    #gallery .pictures img{
+    height: 96%;
+    width: 95%;
+}
+
+    
+
+
+    #nav-links a:hover{
+        transform: scale(1.1);
+        color: #C9A24D;
+    }
+
+    #nav-links a:active{
+        color: #C9A24D;
+        transform: scale(0.98);
+    }
+
+    
+
+    .barber-template{
+        height: 270px;
+    }
+
+    .barber-template img{
+        height: 140px;
+    }
+}
+
+
+
+@media (min-width: 1441px) and (max-width: 1700px) {
+     #nav-links i{
+        display: none;
+    }
+
+    #hamburger button{
+        display: none;
+    }
+
+    .pictures img{
+        height: 70%;
+        width: 70%;
+    }
+
+     header{
+        height: 360px;
+    }
+
+    #nav-links{
+        font-size: 1.45rem;
+        font-weight: bold;
+    }
+
+    #nav-links a:hover{
+        transform: scale(1.1);
+        color: #C9A24D;
+    }
+
+    #nav-links a:active{
+        color: #C9A24D;
+        transform: scale(0.98);
+    }
+
+
+
+    .barber-template{
+        height: 310px;
+    }
+
+    .barber-template img{
+        height: 190px;
+    }
+
+    .pictures{
+        margin-top: 10px;
+    }
+
+    .pictures div{
+        height: 390px;
+    }
+
+    #gallery .pictures img{
+    height: 96%;
+    width: 95%;
+}
+
+}
+
+
