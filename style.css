@@ -112,7 +112,7 @@ header{
     display:  flex;
     flex-direction: column;
     justify-content: space-around;
-
+    background: red;
 }
 
 #hero-sec{
@@ -121,7 +121,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 4%;
-    
+    height: 90vh;
 }
 
 header h2{
