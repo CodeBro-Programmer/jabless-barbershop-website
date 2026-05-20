@@ -108,10 +108,11 @@ header{
     background-size: 120%;
     font-family: 'Playfair Display', serif;
     scroll-margin-top: 95px;
-    height: max-content;
+    height: 90vh;
     display:  flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 #hero-sec{
@@ -120,7 +121,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 4%;
-    height: 90vh;
+    
 }
 
 header h2{
